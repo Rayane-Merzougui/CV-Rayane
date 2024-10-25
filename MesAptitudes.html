@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV-Merzougui-Rayane</title>
+    <link rel="stylesheet" href="./FrontEnd/style.css" />
+    <link rel="shortcut icon" href="./Assets/Icons/icon-site.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" id="title">Rayane Merzougui</a>
+      <div class="nav-link">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="SmartContrats.html">Smart Contrats</a></li>
+          <li><a href="MesAptitudes.html" id="active">Mes aptitudes</a></li>
+          <li><a href="MeContacter.html">Me Contacter</a></li>
+        </ul>
+      </div>
+      <img src="./Assets/Icons/menu-btn.png" alt="menu" id="burger" />
+    </nav>
+    <header></header>
+    <div class="back"></div>
+    <div class="text-app">
+      <h2>Calculatrice</h2>
+      <p>
+        l'exercice de la calculatrice est asser basique mais tout aussi
+        efficace, étant donné qu'il démontre très clairement la métrise d'HTML ,
+        CSS et JavaScript donc là voici :
+      </p>
+    </div>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <div class="buttons">
+        <button onclick="insert('1')">1</button>
+        <button onclick="insert('2')">2</button>
+        <button onclick="insert('3')">3</button>
+        <button onclick="insert('+')">+</button>
+        <button onclick="insert('4')">4</button>
+        <button onclick="insert('5')">5</button>
+        <button onclick="insert('6')">6</button>
+        <button onclick="insert('-')">-</button>
+        <button onclick="insert('7')">7</button>
+        <button onclick="insert('8')">8</button>
+        <button onclick="insert('9')">9</button>
+        <button onclick="insert('x')">x</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="insert('0')">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="insert('/')">/</button>
+      </div>
+    </div>
+    <div class="boxpop">
+      <p>
+        Certains site font apparaitre une pop up et c'est asser basique a faire,
+        et j'ai rajouter un imput pour inscrir un email ou autre.
+      </p>
+      <input type="text" id="email" placeholder="Entrer votre email" />
+      <button id="exite">&#10006;</button>
+    </div>
+    <div class="back2"></div>
+    <div class="formulaire">
+      <h2>Formulaire en grid</h2>
+      <div class="content">
+        <img src="./Assets/Icons/Form.png" alt="image formulaire" />
+        <form action="" id="form">
+          <input type="text" id="Nom" placeholder="Nom" />
+          <input type="text" id="Prénom" placeholder="Prénom" />
+          <textarea
+            name="msg"
+            id="msg"
+            placeholder="Entrer votre message ici"
+          ></textarea>
+          <input type="submit" value="Valider" id="valid" />
+        </form>
+      </div>
+    </div>
+    <div class="back3"></div>
+    <div class="autreff">
+      <h2>Autre effect</h2>
+      <p>
+        J'ai rajouter d'autre effect simpatique dans ce site par example
+        <strong>un effect de selection</strong>, alors allez-y et slectionner un
+        text au choix dans se site et vous verrez, et je vous prie de me dire si
+        vous trouver que c'est mieux, j'ajoute aussi que ce site est totalement
+        <strong>Responsive</strong>, donc vous pouver vous balader dans ce site
+        avec votre PC, tablette ou telephone ce site fonctionneras trés bien.
+      </p>
+    </div>
+
+    <script src="./FrontEnd/index.js"></script>
+  </body>
+</html>

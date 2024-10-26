@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -20,41 +20,69 @@
       </div>
       <img src="./Assets/Icons/menu-btn.png" alt="menu" id="burger" />
     </nav>
-<header></header>
+    <header></header>
     <!-- Section pour ajouter un message -->
-     <section class="Dapp1">
-      <h1>Guestbook DApp</h1>
-      <div class="newDiv"><p>----------------------------------------------------------------------------------------------------------------------------------------------------------</p></div>
-    <div>
-        <h2>Add a Message</h2>
-        <input type="text" id="messageInput" placeholder="Enter your message here">
-        <br>
-        <button onclick="addMessage()">Add Message</button>
-    </div>
-    <div class="newDiv"><p>----------------------------------------------------------------------------------------------------------------------------------------------------------</p></div>
-    <!-- Section pour afficher les messages -->
-    <div>
-        <h2 id="titred">All Messages</h2>
-        <button onclick="getAllMessages()">Show Messages</button>
+    <section class="Dapp1">
+      <h1 class="bright-text">DApp Livre d'Or</h1>
+      <div class="newDiv">
+        <p>
+          ----------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+      </div>
+      <div>
+        <h2>Ajouter Un Message</h2>
+        <input
+          type="text"
+          id="messageInput"
+          placeholder="Entrer votre message ici"
+        />
+        <br />
+        <button onclick="addMessage()">Ajouter Message</button>
+      </div>
+      <div class="newDiv">
+        <p>
+          ----------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+      </div>
+      <!-- Section pour afficher les messages -->
+      <div>
+        <h2 id="titred">Tout les Messages</h2>
+        <button onclick="getAllMessages()">Montrer Messages</button>
         <pre id="output"></pre>
-    </div>
-    <div class="newDiv"><p>----------------------------------------------------------------------------------------------------------------------------------------------------------</p></div>
-    <!-- Section pour supprimer un message -->
-    <div>
-        <h2>Delete a Message</h2>
-        <input type="number" id="deleteIndex" placeholder="Message index to delete">
-        <br>
-        <button onclick="deleteMessage()">Delete Message</button>
-    </div>
-    <div class="newDiv"><p>----------------------------------------------------------------------------------------------------------------------------------------------------------</p></div>
-    <!-- Section pour changer le propriétaire -->
-    <div>
-        <h2>Change Owner</h2>
-        <input type="text" id="newOwner" placeholder="Enter new owner's address">
-        <br>
-        <button onclick="changeOwner()">Change Owner</button>
-    </div>
-  </section>
+      </div>
+      <div class="newDiv">
+        <p>
+          ----------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+      </div>
+      <!-- Section pour supprimer un message -->
+      <div>
+        <h2>Supprimer un Message</h2>
+        <input
+          type="number"
+          id="deleteIndex"
+          placeholder="Entrer l'index du message que vous vouler supprimer"
+        />
+        <br />
+        <button onclick="deleteMessage()">Supprimer Message</button>
+      </div>
+      <div class="newDiv">
+        <p>
+          ----------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+      </div>
+      <!-- Section pour changer le propriétaire -->
+      <div>
+        <h2>Changer le propriétaire</h2>
+        <input
+          type="text"
+          id="newOwner"
+          placeholder="Entrer l'address du nouveau propriétaire"
+        />
+        <br />
+        <button onclick="changeOwner()">Changer propriétaire</button>
+      </div>
+    </section>
     <script src="./FrontEnd/Smart.js"></script>
     <script src="./FrontEnd/index.js"></script>
   </body>

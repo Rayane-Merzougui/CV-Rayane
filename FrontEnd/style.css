@@ -363,25 +363,25 @@ form {
 .autreff strong {
   color: gold;
 }
-.Dapp1{
+.Dapp1 {
   text-align: center;
   align-items: center;
   backdrop-filter: blur(10px);
   box-shadow: 1px 2px 20px rgb(0, 57, 202);
   position: absolute;
-  width:95%;
+  width: 95%;
   top: 250px;
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 40px;
   padding-top: 20px;
-  margin-right:auto ;
+  margin-right: auto;
   margin-left: 30px;
   margin-bottom: 20px;
   border-radius: 20px;
 }
 .Dapp1 button {
-  width: 12%;
+  width: 20%;
   height: 40px;
 }
 .Dapp1 button:hover {
@@ -404,13 +404,27 @@ form {
   outline: none;
   background-color: rgb(248, 247, 247);
 }
-.newDiv  p {
+.Dapp1 input[type="number"]:focus {
+  border: none;
+  outline: none;
+  background-color: rgb(248, 247, 247);
+}
+.newDiv p {
   letter-spacing: -3px;
   color: aqua;
 }
 #titred {
   margin-bottom: 20px;
 }
+.bright-text {
+  background: linear-gradient(45deg, #ffd700, #ffc700, #ffa500, #ffd700);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  display: inline-block;
+}
+
 @media screen and (max-width: 1120px) {
   .navbar {
     padding: 0;
@@ -480,11 +494,11 @@ form {
   }
 }
 @media screen and (max-width: 980px) {
-  .Dapp1{
+  .Dapp1 {
     margin-left: 20px;
   }
   .Dapp1 button {
-    width: 20%;
+    width: 27%;
   }
 }
 @media screen and (max-width: 910px) {
@@ -515,7 +529,7 @@ form {
   .back3 {
     height: 370px;
   }
-  .newDiv  p {
+  .newDiv p {
     letter-spacing: -4px;
   }
 }
@@ -541,13 +555,13 @@ form {
   .back3 {
     height: 410px;
   }
-  .Dapp1{
+  .Dapp1 {
     margin-left: 15px;
   }
 }
 @media screen and (max-width: 610px) {
   .Dapp1 button {
-    width: 30%;
+    width: 35%;
   }
 }
 @media screen and (max-width: 580px) {
@@ -580,13 +594,13 @@ form {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .Dapp1{
+  .Dapp1 {
     margin-left: 10px;
   }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .Dapp1 button {
-    width: 40%;
+    width: 45%;
   }
 }
 @media screen and (max-width: 425px) {

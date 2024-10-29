@@ -618,6 +618,9 @@ form {
     margin-left: 8px;
   }
 }
+.Dapp1 input {
+  font-size: 0.9rem;
+}
 @media screen and (max-width: 390px) {
   .boxpop {
     width: 250px;

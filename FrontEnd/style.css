@@ -65,6 +65,66 @@ header {
   margin: 0 25px;
   font-size: 1.5rem;
 }
+.lang-menu {
+  align-items: center;
+  position: absolute;
+  top: 140px;
+  left: 5%;
+  padding-right: 5px;
+  z-index: 1000;
+}
+.select-lang {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.select-lang::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 20px;
+  margin: 10px;
+  background-image: url(../Assets/Icons/France-flag-icon-32.png);
+}
+.select-lang::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+  background-image: url(../Assets/Icons/icons8-triangle-arrow-24.png);
+}
+.hide {
+  margin: 0;
+  padding: 0;
+  border: rgb(121, 157, 199) 2px solid;
+  border-radius: 15px;
+  font-weight: bold;
+  display: none;
+}
+.show {
+  margin: 0;
+  padding: 0;
+  border: rgb(121, 157, 199) 2px solid;
+  border-radius: 15px;
+  font-weight: bold;
+  display: flex;
+  transition: 1s;
+}
+.lang-menu ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.lang-menu ul li a::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 17px;
+  margin: 10px;
+  vertical-align: middle;
+  background-image: url(../Assets/Icons/United-states-of-america-flag-icon-32.png);
+}
 #burger {
   display: none;
   width: 50px;
@@ -421,7 +481,6 @@ form {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   display: inline-block;
   font-size: 2rem;
   text-shadow: 1px 1px 6px gold;

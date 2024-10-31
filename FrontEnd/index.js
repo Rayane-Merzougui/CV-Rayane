@@ -3,11 +3,15 @@ const navLinks = document.querySelector(".nav-link");
 const boxpop = document.querySelector(".boxpop");
 const exit = document.getElementById("exite");
 const form = document.getElementById("form");
-
+const lang = document.querySelector(".select-lang");
+const menuLang = document.querySelector(".lang-menu ul");
 menuburger.addEventListener("click", () =>
   navLinks.classList.toggle("mobil-menu")
 );
-
+lang.addEventListener("click", () => {
+  menuLang.classList.toggle("hide");
+  menuLang.classList.toggle("show");
+});
 function insert(value) {
   document.getElementById("display").value += value;
 }
@@ -40,5 +44,3 @@ exit.addEventListener("click", () => {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 });
-
-

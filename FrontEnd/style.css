@@ -73,6 +73,14 @@ header {
   padding-right: 5px;
   z-index: 1000;
 }
+.langu-menu {
+  align-items: center;
+  position: absolute;
+  top: 140px;
+  left: 5%;
+  padding-right: 5px;
+  z-index: 900;
+}
 .select-lang {
   cursor: pointer;
   display: flex;
@@ -95,6 +103,28 @@ header {
   margin: 10px;
   background-image: url(../Assets/Icons/icons8-triangle-arrow-24.png);
 }
+.select-langu {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.select-langu::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 17px;
+  margin: 10px;
+  background-image: url(../Assets/Icons/United-states-of-america-flag-icon-32.png);
+}
+.select-langu::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+  background-image: url(../Assets/Icons/icons8-triangle-arrow-24.png);
+}
 .hide {
   margin: 0;
   padding: 0;
@@ -110,7 +140,6 @@ header {
   border-radius: 15px;
   font-weight: bold;
   display: flex;
-  transition: 1s;
 }
 .lang-menu ul li {
   display: flex;
@@ -124,6 +153,19 @@ header {
   margin: 10px;
   vertical-align: middle;
   background-image: url(../Assets/Icons/United-states-of-america-flag-icon-32.png);
+}
+.langu-menu ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.langu-menu ul li a::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 17px;
+  margin: 10px;
+  vertical-align: middle;
+  background-image: url(../Assets/Icons/France-flag-icon-32.png);
 }
 #burger {
   display: none;

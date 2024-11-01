@@ -5,13 +5,24 @@ const exit = document.getElementById("exite");
 const form = document.getElementById("form");
 const lang = document.querySelector(".select-lang");
 const menuLang = document.querySelector(".lang-menu ul");
+const langu = document.querySelector(".select-langu");
+const menuLangu = document.querySelector(".langu-menu ul");
+if (langu && menuLangu) {
+  langu.addEventListener("click", () => {
+    menuLangu.classList.toggle("hide");
+    menuLangu.classList.toggle("show");
+  });
+}
+
 menuburger.addEventListener("click", () =>
   navLinks.classList.toggle("mobil-menu")
 );
-lang.addEventListener("click", () => {
-  menuLang.classList.toggle("hide");
-  menuLang.classList.toggle("show");
-});
+if (lang && menuLang) {
+  lang.addEventListener("click", () => {
+    menuLang.classList.toggle("hide");
+    menuLang.classList.toggle("show");
+  });
+}
 function insert(value) {
   document.getElementById("display").value += value;
 }

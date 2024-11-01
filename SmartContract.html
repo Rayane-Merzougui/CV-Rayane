@@ -29,21 +29,21 @@
     </div>
     <!-- Section pour ajouter un message -->
     <section class="Dapp1">
-      <h1 class="bright-text">DApp Livre d'Or</h1>
+      <h1 class="bright-text">Guestbook DApp</h1>
       <div class="newDiv">
         <p>
           ----------------------------------------------------------------------------------------------------------------------------------------------------------
         </p>
       </div>
       <div>
-        <h2>Ajouter Un Message</h2>
+        <h2>Add Message</h2>
         <input
           type="text"
           id="messageInput"
-          placeholder="Entrer votre message ici"
+          placeholder="Enter your message here"
         />
         <br />
-        <button onclick="addMessage()">Ajouter Message</button>
+        <button onclick="addMessage()">Add Message</button>
       </div>
       <div class="newDiv">
         <p>
@@ -52,8 +52,8 @@
       </div>
       <!-- Section pour afficher les messages -->
       <div>
-        <h2 id="titred">Tout les Messages</h2>
-        <button onclick="getAllMessages()">Montrer Messages</button>
+        <h2 id="titred">See All Messages</h2>
+        <button onclick="getAllMessages()">Show Messages</button>
         <pre id="output"></pre>
       </div>
       <div class="newDiv">
@@ -63,14 +63,14 @@
       </div>
       <!-- Section pour supprimer un message -->
       <div>
-        <h2>Supprimer un Message</h2>
+        <h2>Delete a Message</h2>
         <input
           type="number"
           id="deleteIndex"
-          placeholder="Entrer l'index du message que vous vouler supprimer"
+          placeholder="Enter the index of the message you want to delete"
         />
         <br />
-        <button onclick="deleteMessage()">Supprimer Message</button>
+        <button onclick="deleteMessage()">Delete Message</button>
       </div>
       <div class="newDiv">
         <p>
@@ -79,14 +79,14 @@
       </div>
       <!-- Section pour changer le propriétaire -->
       <div>
-        <h2>Changer le propriétaire</h2>
+        <h2>Change Owner</h2>
         <input
           type="text"
           id="newOwner"
-          placeholder="Entrer l'address du nouveau propriétaire"
+          placeholder="Enter the new owner's address"
         />
         <br />
-        <button onclick="changeOwner()">Changer propriétaire</button>
+        <button onclick="changeOwner()">Change Owner</button>
       </div>
     </section>
     <script src="./FrontEnd/Smart.js"></script>
